@@ -15,25 +15,25 @@ class JogoDaMemoriaAcitivity : AppCompatActivity() {
         setContentView(R.layout.activity_jogo_da_memoria_acitivity)
 
         val images: MutableList<Int> = mutableListOf(
-            bat,
-            butterfly,
-            dove,
-            panda,
-            parrot,
-            spider,
-            bat,
-            butterfly,
-            dove,
-            panda,
-            parrot,
-            spider
+            amarelo,
+            azul,
+            roxo,
+            laranja,
+            vermelho,
+            verde,
+            amarelo,
+            azul,
+            roxo,
+            laranja,
+            vermelho,
+            verde
         )
 
         val buttons = arrayOf(
             button, button1, button2, button3, button4, button5, button6,
             button7, button8, button9, button10, button11
         )
-        val cardBack = gamecontroller
+        val cardBack = cinza
         var clicked = 0
         var turnOver = false
         var lastClicked = -1
