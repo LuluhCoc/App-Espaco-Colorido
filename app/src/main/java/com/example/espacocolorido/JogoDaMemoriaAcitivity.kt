@@ -2,36 +2,37 @@
 package com.example.espacocolorido
 
 import android.annotation.SuppressLint
+
+import android.media.MediaPlayer
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.espacocolorido.R.drawable.*
 import kotlinx.android.synthetic.main.activity_jogo_da_memoria_acitivity.*
 
 class JogoDaMemoriaAcitivity : AppCompatActivity() {
-
     @SuppressLint("SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
+        var mediaPlayer: MediaPlayer? = MediaPlayer.create(applicationContext, R.raw.correto)
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_jogo_da_memoria_acitivity)
 
         val images: MutableList<Int> = mutableListOf(
-            amarelo,
-            azul,
-            roxo,
-            laranja,
-            vermelho,
-            verde,
-            amarelo,
-            azul,
-            roxo,
-            laranja,
-            vermelho,
-            verde
+                amarelo,
+                azul,
+                roxo,
+                laranja,
+                vermelho,
+                verde,
+                amarelo,
+                azul,
+                roxo,
+                laranja,
+                vermelho,
+                verde
         )
 
         val buttons = arrayOf(
-            button, button1, button2, button3, button4, button5, button6,
-            button7, button8, button9, button10, button11
+                button, button1, button2, button3, button4, button5, button6,
+                button7, button8, button9, button10, button11
         )
         val cardBack = cinza
         var clicked = 0
@@ -64,6 +65,7 @@ class JogoDaMemoriaAcitivity : AppCompatActivity() {
                         buttons[lastClicked].isClickable = false
                         turnOver = false
                         clicked = 0
+                        mediaPlayer?.start()
                     }
                 } else if (clicked == 0) {
                     turnOver = false
