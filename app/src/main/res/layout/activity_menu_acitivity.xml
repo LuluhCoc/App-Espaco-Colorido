@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dinos"
+    tools:context=".MenuAcitivity">
+
+    <ImageView
+        android:id="@+id/button_voltar"
+        android:layout_width="226dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="37dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_jogo_memoria"
+        app:srcCompat="@drawable/voltar" />
+
+    <ImageView
+        android:id="@+id/button_desenhos"
+        android:layout_width="228dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginBottom="38dp"
+        app:layout_constraintBottom_toBottomOf="@+id/button_jogo_memoria"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/button_combinando_cores"
+        app:srcCompat="@drawable/desenhos" />
+
+    <ImageView
+        android:id="@+id/button_jogo_memoria"
+        android:layout_width="228dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="347dp"
+        app:layout_constraintBottom_toTopOf="@+id/button_voltar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_combinando_cores"
+        app:srcCompat="@drawable/jogodamemoria" />
+
+    <ImageView
+        android:id="@+id/button_combinando_cores"
+        android:layout_width="228dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="45dp"
+        app:layout_constraintBottom_toTopOf="@+id/button_jogo_memoria"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_aprendendo_cores"
+        app:srcCompat="@drawable/combinacaodecores" />
+
+    <ImageView
+        android:id="@+id/button_aprendendo_cores"
+        android:layout_width="228dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="55dp"
+        app:layout_constraintBottom_toTopOf="@+id/button_combinando_cores"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/aprendendoascores" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

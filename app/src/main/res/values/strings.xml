@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Espaço Colorido</string>
+    <string name="top_label">Espaço Colorido</string>
+    <string name="instructions">Vire as cartas para combinar, se eles não corresponderem, volte o cartão e tente outras, quando elas combinarem, continue com as outras</string>
+</resources>
