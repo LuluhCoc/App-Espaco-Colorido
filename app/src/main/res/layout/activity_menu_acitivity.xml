@@ -22,7 +22,7 @@
         android:id="@+id/button_desenhos"
         android:layout_width="228dp"
         android:layout_height="46dp"
-        android:layout_marginTop="49dp"
+        android:layout_marginTop="39dp"
         android:layout_marginBottom="38dp"
         app:layout_constraintBottom_toBottomOf="@+id/button_jogo_memoria"
         app:layout_constraintEnd_toEndOf="parent"
@@ -39,7 +39,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button_combinando_cores"
-        app:srcCompat="@drawable/jogodaemoria" />
+        app:srcCompat="@drawable/jogodamemoria" />
 
     <ImageView
         android:id="@+id/button_combinando_cores"
@@ -50,7 +50,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button_aprendendo_cores"
-        app:srcCompat="@drawable/combinandoascores" />
+        app:srcCompat="@drawable/combinacaodecores" />
 
     <ImageView
         android:id="@+id/button_aprendendo_cores"

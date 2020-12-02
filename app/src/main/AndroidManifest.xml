@@ -9,12 +9,28 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AprendendoCoresAcitivity"></activity>
-        <activity android:name=".CombinacaoCoresAcitivity" />
-        <activity android:name=".DesenhosActivity" />
-        <activity android:name=".MenuAcitivity" />
+        <activity
+            android:name=".EscolhaACorAcitivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AprendendoCoresAcitivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CombinacaoCoresAcitivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ResultadoDaEscolhaActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DesenhosActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MenuAcitivity"
+            android:screenOrientation="portrait" />
         <activity android:name=".JogoDaMemoriaAcitivity" />
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
